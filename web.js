@@ -6,7 +6,6 @@ var express = require('express');
 var fs = require('fs');
 var htmlfile = "index.html";
 
-//* var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
    var dindex = fs.readFileSync('index.html','utf8');
